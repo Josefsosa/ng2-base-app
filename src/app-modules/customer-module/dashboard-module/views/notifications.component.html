@@ -1,0 +1,8 @@
+<h3>Notifications</h3>
+<div ng-if="$ctrl.loading">
+  <p class="loading">Loading...</p>
+</div>
+<div ng-if="!$ctrl.loading" class="alert alert-info" ng-repeat="notification in $ctrl.viewNotifications">
+  {{notification.description}}
+  <span class="pull-right glyphicon glyphicon-exclamation-sign"></span>
+</div>

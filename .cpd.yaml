@@ -1,0 +1,8 @@
+languages:
+  - typescript
+files:
+  - "src/**/*.ts"
+exclude:
+  - "src/**/*.spec.ts"
+  - "src/vendor/**/*"
+reporter: json

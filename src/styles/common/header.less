@@ -1,0 +1,103 @@
+.dark-grey-bg{
+  background-color: #5a5954;
+}
+
+@bgDefault      : #e20074;
+@bgHighlight    : #e20074  ;
+@colDefault     : #ffffff;
+@colHighlight   : #ffbbbc;
+.navbar-inverse {
+  background-color: @bgDefault;
+  color: @colDefault;
+}
+.navbar-default {
+  background-color: @bgDefault;
+  border-color: @bgHighlight;
+  color: @colDefault;
+;
+  .navbar-brand {
+    color: @colDefault;
+    &:hover, &:focus {
+      color: @colHighlight; }}
+  .navbar-text {
+    color: @colDefault; }
+  .navbar-nav {
+    > li {
+      > a {
+        color: @colDefault;
+        &:hover,  &:focus {
+          color: @colHighlight; }}}
+    > .active {
+      > a, > a:hover, > a:focus {
+        color: @colHighlight;
+        background-color: @bgHighlight; }}
+    > .open {
+      > a, > a:hover, > a:focus {
+        color: @colHighlight;
+        background-color: @bgHighlight; }}
+  }
+  .navbar-toggle {
+    border-color: @bgHighlight;
+    &:hover, &:focus {
+      background-color: @bgHighlight; }
+    .icon-bar {
+      background-color: @colDefault; }}
+  .navbar-collapse,
+  .navbar-form {
+    border-color: @colDefault; }
+  .navbar-link {
+    color: @colDefault;
+    &:hover {
+      color: @colHighlight; }}}
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu {
+    > li > a {
+      color: @colDefault;
+      &:hover, &:focus {
+        color: @colHighlight; }}
+    > .active {
+      > a, > a:hover, > a:focus, {
+        color: @colHighlight;
+        background-color: @bgHighlight; }}}
+}
+
+
+
+.nav>li>a
+{
+	position: relative;
+    display: block;
+    padding: 10px 2px;
+    font-size: 12px;
+    font-weight: bold;
+}
+.espanol {
+    float: right;
+    color: white;
+    margin-top: -27px;
+    font-size: 12px;
+    font-family: Tele-Grotesk,sans-serif;
+    font-weight: bold;
+    /* font-size: 12px; */
+}
+hr {
+    margin-top: 0px;
+    /* margin-bottom: 20px; */
+    border: 0;
+    border-top: 1px solid #000;
+}
+.belowheader
+{
+	max-width: 992px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: -20px;
+    height: 60px;
+}
+.contententer
+{
+	height: 100%;
+	max-width: 992px;
+	margin-right: auto;
+	margin-left: auto;
+}

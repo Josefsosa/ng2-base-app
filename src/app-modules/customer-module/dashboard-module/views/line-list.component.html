@@ -1,0 +1,18 @@
+
+<h3>Lines</h3>
+<div class="panel panel-default">
+  <div ng-if="$ctrl.loading">
+    <p class="loading">Loading...</p>
+  </div>
+  <div ng-if="!$ctrl.loading && $ctrl.lines.length == 0">
+    <p class="loading">No Lines Available</p>
+  </div>
+  <ul class="list-group" ng-if="!$ctrl.loading && $ctrl.lines.length > 0">
+    <li class="list-group-item" ng-repeat="line in $ctrl.lines">
+      <customer-line-detail line="line" customer-id="$ctrl.customerId" on-delete="$ctrl.refreshLines()"></customer-line-detail>
+    </li>
+  </ul>
+  <div class="panel-footer text-right">
+    <a class="btn btn-success" href="#" ng-click="$ctrl.addLine()">Add Line</a>
+  </div>
+</div>

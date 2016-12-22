@@ -1,0 +1,14 @@
+
+<div class="container">
+  <div class="col-xs-12">
+    <h2>My Dashboard</h2>
+  </div>
+  <div class="col-xs-12 col-sm-7">
+    <customer-info customer-id="$ctrl.customerId"></customer-info>
+    <customer-line-list customer-id="$ctrl.customerId"></customer-line-list>
+  </div>
+  <div class="col-xs-12 col-sm-5">
+    <customer-account-balance customer-id="$ctrl.customerId"></customer-account-balance>
+    <customer-notifications customer-id="$ctrl.customerId" notifications="$ctrl.customer.notifications"></customer-notifications>
+  </div>
+</div>

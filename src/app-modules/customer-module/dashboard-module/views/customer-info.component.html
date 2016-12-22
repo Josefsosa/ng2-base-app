@@ -1,0 +1,20 @@
+
+<h3>Information</h3>
+<div class="panel panel-default">
+  <div class="panel-body">
+    <div ng-if="$ctrl.loading">
+      <p class="loading">Loading...</p>
+    </div>
+    <div ng-if="!$ctrl.loading && $ctrl.noInfo">
+      <p class="loading">No Information Available</p>
+    </div>
+    <div ng-if="!$ctrl.loading && !$ctrl.noInfo">
+      <p>{{$ctrl.profile.CustomerFullName}} ({{$ctrl.profile.CustomerEmailAddress}})</p>
+      <p><strong>Billing Address</strong></p>
+      <p ng-if="$ctrl.profile.BillingAddress.State">State: {{$ctrl.profile.BillingAddress.State}}</p>
+      <p ng-if="$ctrl.profile.BillingAddress.City">City: {{$ctrl.profile.BillingAddress.City}}</p>
+      <p ng-if="$ctrl.profile.BillingAddress.Street">Street: {{$ctrl.profile.BillingAddress.Street}}</p>
+      <p ng-if="$ctrl.profile.BillingAddress.Zip4">Zip4: {{$ctrl.profile.BillingAddress.Zip4}}</p>
+    </div>
+  </div>
+</div>

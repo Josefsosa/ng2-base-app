@@ -1,0 +1,12 @@
+<div class="row">
+  <div class="col-sm-6">
+    <p><strong>Make:</strong> {{$ctrl.line.Make}}</p>
+    <p><strong>Model:</strong> {{$ctrl.line.Model}}</p>
+    <p><a href="#" ng-click="$ctrl.removeLineItem()" class="text-danger"><small>Remove Line Item</small></a></p>
+  </div>
+  <div class="col-sm-6">
+    <p><strong>Quantity:</strong> {{$ctrl.line.Quantity}}</p>
+    <p><strong>Unit Price:</strong> {{$ctrl.line.UnitPrice | currency }}</p>
+    <p><strong>Total Price:</strong> {{($ctrl.line.UnitPrice * $ctrl.line.Quantity) | currency }}</p>
+  </div>
+</div>
